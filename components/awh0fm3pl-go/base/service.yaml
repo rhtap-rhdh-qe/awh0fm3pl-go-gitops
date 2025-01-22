@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: awh0fm3pl-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: awh0fm3pl-go 
+  name: awh0fm3pl-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: awh0fm3pl-go 
